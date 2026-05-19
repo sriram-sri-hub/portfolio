@@ -37,13 +37,14 @@ export default function Home() {
 
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
 
-              <a
-                href="/sriram-cv.pdf"
-                download
-                className="inline-flex items-center justify-center rounded-full bg-blue-500 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 hover:bg-blue-400 hover:shadow-blue-500/40 transition-all duration-300 cursor-pointer"
-              >
-                Download Resume
-              </a>
+             <a
+  href="/sriram-cv.pdf"
+  target="_blank"
+  rel="noreferrer"
+  className="inline-flex items-center justify-center rounded-full bg-blue-500 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 hover:bg-blue-400 hover:shadow-blue-500/40 transition-all duration-300 cursor-pointer"
+>
+  View Resume
+</a>
 
               <a
                 href="#contact"
