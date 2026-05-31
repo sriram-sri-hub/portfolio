@@ -17,7 +17,7 @@ export default function Projects() {
 ];
 
   return (
-    <section id="projects" className="py-24 bg-slate-950 text-white">
+    <section id="projects" className="py-24 bg-slate-950 text-white animate-fade-in">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}

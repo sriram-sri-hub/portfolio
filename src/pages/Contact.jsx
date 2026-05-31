@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-slate-950 text-white">
+    <section id="contact" className="py-24 bg-slate-950 text-white animate-fade-in">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-16 text-center">
           <p className="text-sm uppercase tracking-[0.4em] text-blue-400">Contact</p>
@@ -13,7 +13,7 @@ export default function Contact() {
 
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
           <div className="space-y-6">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-blue-500/10">
+            <div className="rounded-4xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-blue-500/10">
               <p className="text-sm uppercase tracking-[0.35em] text-slate-400">Email</p>
               <p className="mt-4 text-xl font-semibold text-white">sriram451803@gmail.com</p>
               <a
@@ -24,18 +24,18 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-blue-500/10">
+            <div className="rounded-4xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-blue-500/10">
               <p className="text-sm uppercase tracking-[0.35em] text-slate-400">Phone</p>
               <p className="mt-4 text-xl font-semibold text-white">+91 93847 26360</p>
             </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-blue-500/10">
+            <div className="rounded-4xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-blue-500/10">
               <p className="text-sm uppercase tracking-[0.35em] text-slate-400">Location</p>
               <p className="mt-4 text-xl font-semibold text-white">Tamil Nadu, India</p>
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-10 shadow-2xl shadow-black/20 backdrop-blur-xl">
+          <div className="rounded-4xl border border-white/10 bg-slate-900/80 p-10 shadow-2xl shadow-black/20 backdrop-blur-xl">
             <div className="mb-8">
               <p className="text-sm uppercase tracking-[0.35em] text-slate-400">Let’s connect</p>
               <h3 className="mt-4 text-3xl font-semibold text-white"></h3>

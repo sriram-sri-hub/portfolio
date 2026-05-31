@@ -19,7 +19,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-24 bg-slate-950 text-white">
+    <section id="skills" className="py-24 bg-slate-950 text-white animate-fade-in">
       <div className="max-w-5xl mx-auto px-6">
 
         {/* Heading */}

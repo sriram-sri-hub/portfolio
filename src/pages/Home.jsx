@@ -2,8 +2,8 @@ import profile from "../assets/profile.jpg";
 
 export default function Home() {
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden bg-slate-950 text-white">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.12),_transparent_24%),radial-gradient(circle_at_bottom_right,_rgba(139,92,246,0.16),_transparent_26%),linear-gradient(180deg,_rgba(15,23,42,0.9),_rgba(15,23,42,0.98))]" />
+    <section id="home" className="relative min-h-screen overflow-hidden bg-slate-950 text-white animate-fade-in">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.12),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(139,92,246,0.16),transparent_26%),linear-gradient(180deg,rgba(15,23,42,0.9),rgba(15,23,42,0.98))]" />
       <div className="pointer-events-none absolute left-1/2 top-1/4 h-80 w-80 -translate-x-1/2 rounded-full bg-blue-500/15 blur-3xl" />
       <div className="pointer-events-none absolute right-10 top-28 h-60 w-60 rounded-full bg-fuchsia-500/15 blur-3xl" />
 
@@ -41,18 +41,17 @@ export default function Home() {
   href="/sriram-cv.pdf"
   target="_blank"
   rel="noreferrer"
-  className="inline-flex items-center justify-center rounded-full bg-blue-500 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 hover:bg-blue-400 hover:shadow-blue-500/40 transition-all duration-300 cursor-pointer"
+  className="inline-flex items-center justify-center rounded-full bg-blue-500 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition-all duration-300 hover:bg-blue-400 hover:shadow-blue-500/40 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400"
 >
   View Resume
 </a>
 
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-7 py-3 text-sm font-semibold text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
+                className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-white/10 hover:border-white/20 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 Contact Me
               </a>
-
             </div>
 
           </div>
@@ -63,13 +62,13 @@ export default function Home() {
             <div className="absolute -left-10 top-10 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl"></div>
             <div className="absolute -right-10 bottom-10 h-40 w-40 rounded-full bg-fuchsia-500/20 blur-3xl"></div>
 
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl shadow-black/30 backdrop-blur-xl">
+            <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-white/5 p-4 shadow-2xl shadow-black/30 backdrop-blur-xl animate-appear">
 
               <div className="overflow-hidden rounded-[1.75rem] border border-white/10">
                 <img
                   src={profile}
                   alt="Sriram C"
-                  className="aspect-square w-full object-cover hover:scale-110 hover:rotate-3 transition-all duration-500 cursor-pointer"
+                  className="aspect-square w-full object-cover transition-all duration-500 hover:scale-110 hover:rotate-3 active:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-400/30"
                 />
               </div>
 

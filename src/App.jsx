@@ -7,22 +7,15 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="bg-white text-gray-800 font-sans">
-
-      {/* Navbar */}
+    <div className="bg-white text-gray-800 font-sans min-h-screen">
       <Navbar />
-
-      {/* Content */}
-      <main className="pt-24 space-y-20">
-
+      <main className="mx-auto max-w-6xl px-4 py-8">
         <Home />
         <About />
         <Skills />
         <Projects />
         <Contact />
-
       </main>
-
     </div>
   );
 }
