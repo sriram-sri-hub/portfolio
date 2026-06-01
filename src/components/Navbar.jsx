@@ -12,12 +12,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/70 shadow-xl">
+    <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-3 text-white">
+        <div className="flex items-center gap-3 text-gray-900">
           <div>
-            <p className="text-sm uppercase tracking-[0.35em] text-slate-400">Portfolio</p>
-            <p className="text-base font-semibold text-white">Sriram C</p>
+            <p className="text-xs uppercase tracking-[0.55em] text-slate-400">Portfolio</p>
+            <p className="text-lg font-semibold font-serif text-slate-900 tracking-tight">Sriram C</p>
           </div>
         </div>
 
@@ -26,7 +26,7 @@ export default function Navbar() {
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((current) => !current)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all duration-300 hover:border-white/20 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-blue-400 md:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 bg-gray-100 text-gray-800 transition-all duration-300 hover:border-gray-300 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-sky-400 md:hidden"
         >
           <span className="relative block h-5 w-5">
             <span
@@ -41,33 +41,26 @@ export default function Navbar() {
           </span>
         </button>
 
-        <div className="hidden md:flex items-center gap-4 text-sm font-medium text-slate-300">
+        <div className="hidden md:flex items-center gap-3 text-sm font-semibold text-slate-600">
           {items.map((item) => (
             <a
               key={item}
               href={`#${item}`}
               onClick={() => handleItemClick(item)}
-              className={`relative px-4 py-2 transition-colors duration-300 ${
+              className={`relative rounded-full px-4 py-2 transition duration-300 ${
                 active === item
-                  ? "text-white"
-                  : "text-slate-400 hover:text-white"
+                  ? "bg-sky-50 text-slate-900 shadow-sm"
+                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
               }`}
             >
-              <span className="relative">
-                {item.charAt(0).toUpperCase() + item.slice(1)}
-                <span
-                  className={`absolute left-0 -bottom-1 h-0.5 w-full rounded-full bg-blue-500 transition-all duration-300 ${
-                    active === item ? "scale-x-100" : "scale-x-0"
-                  }`}
-                />
-              </span>
+              {item.charAt(0).toUpperCase() + item.slice(1)}
             </a>
           ))}
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden animate-slide-down rounded-b-3xl border-t border-slate-800/70 bg-slate-950/95 px-6 py-4 shadow-2xl shadow-black/30 backdrop-blur-xl">
-          <div className="flex flex-col gap-3 text-sm font-medium text-slate-300">
+        <div className="md:hidden animate-slide-down rounded-b-3xl border-t border-gray-200 bg-white/95 px-6 py-4 shadow-lg backdrop-blur-sm">
+          <div className="flex flex-col gap-3 text-sm font-medium text-slate-700">
             {items.map((item) => (
               <a
                 key={item}
@@ -75,8 +68,8 @@ export default function Navbar() {
                 onClick={() => handleItemClick(item)}
                 className={`rounded-2xl px-4 py-3 transition-all duration-300 ${
                   active === item
-                    ? "bg-white/10 text-white"
-                    : "hover:bg-white/10 hover:text-white"
+                    ? "bg-sky-50 text-slate-900"
+                    : "hover:bg-slate-100 hover:text-slate-900"
                 }`}
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}

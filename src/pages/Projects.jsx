@@ -1,3 +1,5 @@
+import { FaFolderOpen } from "react-icons/fa";
+
 export default function Projects() {
   const projects = [
   {
@@ -17,11 +19,14 @@ export default function Projects() {
 ];
 
   return (
-    <section id="projects" className="py-24 bg-slate-950 text-white animate-fade-in">
+    <section id="projects" className="py-24 bg-white text-gray-800 animate-fade-in">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}
         <div className="text-center mb-12">
+          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-blue-100 text-blue-600 text-2xl">
+            <FaFolderOpen />
+          </div>
           <p className="text-sm uppercase tracking-[0.4em] text-blue-400">
             Projects
           </p>
@@ -30,7 +35,7 @@ export default function Projects() {
             My Projects
           </h2>
 
-          <p className="mt-4 text-slate-300 max-w-xl mx-auto">
+          <p className="mt-4 text-gray-600 max-w-xl mx-auto">
             A few projects I’ve built to practice and apply my skills.
           </p>
         </div>
@@ -41,13 +46,13 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="rounded-xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 cursor-pointer"
+              className="rounded-xl border border-gray-200 bg-white p-6 hover:shadow-lg transition-all duration-300 cursor-pointer"
             >
-              <h3 className="text-xl font-semibold text-white mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 {project.title}
               </h3>
 
-              <p className="text-slate-300 text-sm mb-4">
+              <p className="text-gray-600 text-sm mb-4">
                 {project.description}
               </p>
 
@@ -55,14 +60,12 @@ export default function Projects() {
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 text-xs rounded-full bg-slate-900 text-slate-200 border border-white/10 hover:bg-blue-500/20 hover:text-blue-400 transition-all duration-300 cursor-pointer"
+                    className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-700 border border-gray-200 hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 cursor-pointer"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-
-             
 
             </div>
           ))}
